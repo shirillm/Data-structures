@@ -1,29 +1,44 @@
-import pandas as pd
-
-
 def swap_quarters(matrix):
-	m = len(matrix)
-	n = len(matrix[0])
-	half_m = m // 2
-	half_n = n // 2
-	for i in range(half_m):
-		for j in range(half_n):
-			matrix[i][j], matrix[i + half_m][j + half_n] = matrix[i + half_m][j + half_n], matrix[i][j]
+	# Получаем количество строк и столбцов матрицы
+	M = len(matrix)
+	N = len(matrix[0])
+
+	# Проверяем, что размерности матрицы четные
+	if M % 2 != 0 or N % 2 != 0:
+		raise ValueError("Размеры матрицы должны быть четными числами")
+
+	# Вычисляем середины матрицы по строкам и столбцам
+	mid_row = M // 2
+	mid_col = N // 2
+
+	# Проходим по всем элементам левой верхней и правой нижней четвертей
+	for i in range(mid_row):
+		for j in range(mid_col):
+			# Сохраняем значение из левой верхней четверти
+			temp = matrix[i][j]
+
+			# Заменяем значение в левой верхней четверти на значение из правой нижней
+			matrix[i][j] = matrix[i + mid_row][j + mid_col]
+
+			# Заменяем значение в правой нижней четверти на сохраненное значение
+			matrix[i + mid_row][j + mid_col] = temp
+
 	return matrix
 
+# Пример использования
+matrix = [
+	[1, 2, 3, 4],
+	[5, 6, 7, 8],
+	[9, 10, 11, 12],
+	[13, 14, 15, 16]
+]
 
-# Пути к файлам
-input_file = "matrix.xlsx"
-output_file = "matrix_new.xlsx"
+print("Исходная матрица:")
+for row in matrix:
+	print(row)
 
-# Читаем матрицу из Excel
-df = pd.read_excel(input_file, header=None)
-matrix = df.values.tolist()
+result = swap_quarters(matrix)
 
-# Меняем четверти
-matrix_new = swap_quarters(matrix)
-
-# Сохраняем результат в новый Excel
-pd.DataFrame(matrix_new).to_excel(output_file, index=False, header=False)
-
-print(f"Матрица успешно обработана! Результат сохранён в {output_file}")
+print("\nМатрица после обмена четвертей:")
+for row in result:
+	print(row)
