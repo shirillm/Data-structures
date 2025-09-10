@@ -1,0 +1,475 @@
+[
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_1",
+        "description": "Первый семестр Shipov.Задание_1",
+        "peekOfCode": "y = x = a = None\n# Задаем переменные\ny = int(input())\nx = int(input())\na = int(input())\n# Составляем выражение на вывод\ny = (a / (x ** 2 + 1)) - math.cos(2 * x - 1)\n# Принтим\nprint(y)",
+        "detail": "Первый семестр Shipov.Задание_1",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_1",
+        "description": "Первый семестр Shipov.Задание_1",
+        "peekOfCode": "y = int(input())\nx = int(input())\na = int(input())\n# Составляем выражение на вывод\ny = (a / (x ** 2 + 1)) - math.cos(2 * x - 1)\n# Принтим\nprint(y)",
+        "detail": "Первый семестр Shipov.Задание_1",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_1",
+        "description": "Первый семестр Shipov.Задание_1",
+        "peekOfCode": "x = int(input())\na = int(input())\n# Составляем выражение на вывод\ny = (a / (x ** 2 + 1)) - math.cos(2 * x - 1)\n# Принтим\nprint(y)",
+        "detail": "Первый семестр Shipov.Задание_1",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_1",
+        "description": "Первый семестр Shipov.Задание_1",
+        "peekOfCode": "a = int(input())\n# Составляем выражение на вывод\ny = (a / (x ** 2 + 1)) - math.cos(2 * x - 1)\n# Принтим\nprint(y)",
+        "detail": "Первый семестр Shipov.Задание_1",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_1",
+        "description": "Первый семестр Shipov.Задание_1",
+        "peekOfCode": "y = (a / (x ** 2 + 1)) - math.cos(2 * x - 1)\n# Принтим\nprint(y)",
+        "detail": "Первый семестр Shipov.Задание_1",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_if_multiple_of_four",
+        "kind": 2,
+        "importPath": "Первый семестр Shipov.Задание_10",
+        "description": "Первый семестр Shipov.Задание_10",
+        "peekOfCode": "def reverse_if_multiple_of_four(s):\n    # Получаем длину строки\n    length = len(s)\n    # Проверяем, делится ли длина на 4 без остатка\n    if length % 4 == 0:\n        # Создаем пустую строку для результата\n        reversed_string = \"\"\n        # Проходим по строке в обратном порядке\n        for i in range(length - 1, -1, -1):\n            # Добавляем символы в новую строку",
+        "detail": "Первый семестр Shipov.Задание_10",
+        "documentation": {}
+    },
+    {
+        "label": "sum_dict_values",
+        "kind": 2,
+        "importPath": "Первый семестр Shipov.Задание_11",
+        "description": "Первый семестр Shipov.Задание_11",
+        "peekOfCode": "def sum_dict_values(dictionary):\n    return sum(dictionary.values())\n# Преобразуем список в словарь с пустыми значениями\ndef list_to_nested_dict(lst):\n    return {item: {} for item in lst}\n# Проверяем, все ли значения в словаре одинаковые\ndef all_values_equal(dictionary):\n    return len(set(dictionary.values())) == 1\n# Демонстрация работы\ntest_dict = {'a': 1, 'b': 2, 'c': 3, 'd': 4}",
+        "detail": "Первый семестр Shipov.Задание_11",
+        "documentation": {}
+    },
+    {
+        "label": "list_to_nested_dict",
+        "kind": 2,
+        "importPath": "Первый семестр Shipov.Задание_11",
+        "description": "Первый семестр Shipov.Задание_11",
+        "peekOfCode": "def list_to_nested_dict(lst):\n    return {item: {} for item in lst}\n# Проверяем, все ли значения в словаре одинаковые\ndef all_values_equal(dictionary):\n    return len(set(dictionary.values())) == 1\n# Демонстрация работы\ntest_dict = {'a': 1, 'b': 2, 'c': 3, 'd': 4}\nprint(sum_dict_values(test_dict))  # 10\ntest_list = ['a', 'b', 'c']\nprint(list_to_nested_dict(test_list))  # {'a': {}, 'b': {}, 'c': {}}",
+        "detail": "Первый семестр Shipov.Задание_11",
+        "documentation": {}
+    },
+    {
+        "label": "all_values_equal",
+        "kind": 2,
+        "importPath": "Первый семестр Shipov.Задание_11",
+        "description": "Первый семестр Shipov.Задание_11",
+        "peekOfCode": "def all_values_equal(dictionary):\n    return len(set(dictionary.values())) == 1\n# Демонстрация работы\ntest_dict = {'a': 1, 'b': 2, 'c': 3, 'd': 4}\nprint(sum_dict_values(test_dict))  # 10\ntest_list = ['a', 'b', 'c']\nprint(list_to_nested_dict(test_list))  # {'a': {}, 'b': {}, 'c': {}}\ntest_dict_equal = {'a': 1, 'b': 1, 'c': 1}\nprint(all_values_equal(test_dict_equal))  # True",
+        "detail": "Первый семестр Shipov.Задание_11",
+        "documentation": {}
+    },
+    {
+        "label": "test_dict",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_11",
+        "description": "Первый семестр Shipov.Задание_11",
+        "peekOfCode": "test_dict = {'a': 1, 'b': 2, 'c': 3, 'd': 4}\nprint(sum_dict_values(test_dict))  # 10\ntest_list = ['a', 'b', 'c']\nprint(list_to_nested_dict(test_list))  # {'a': {}, 'b': {}, 'c': {}}\ntest_dict_equal = {'a': 1, 'b': 1, 'c': 1}\nprint(all_values_equal(test_dict_equal))  # True",
+        "detail": "Первый семестр Shipov.Задание_11",
+        "documentation": {}
+    },
+    {
+        "label": "test_list",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_11",
+        "description": "Первый семестр Shipov.Задание_11",
+        "peekOfCode": "test_list = ['a', 'b', 'c']\nprint(list_to_nested_dict(test_list))  # {'a': {}, 'b': {}, 'c': {}}\ntest_dict_equal = {'a': 1, 'b': 1, 'c': 1}\nprint(all_values_equal(test_dict_equal))  # True",
+        "detail": "Первый семестр Shipov.Задание_11",
+        "documentation": {}
+    },
+    {
+        "label": "test_dict_equal",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_11",
+        "description": "Первый семестр Shipov.Задание_11",
+        "peekOfCode": "test_dict_equal = {'a': 1, 'b': 1, 'c': 1}\nprint(all_values_equal(test_dict_equal))  # True",
+        "detail": "Первый семестр Shipov.Задание_11",
+        "documentation": {}
+    },
+    {
+        "label": "check_tuple_element",
+        "kind": 2,
+        "importPath": "Первый семестр Shipov.Задание_12",
+        "description": "Первый семестр Shipov.Задание_12",
+        "peekOfCode": "def check_tuple_element(tuple_data, element):\n    # Проверяем наличие элемента в кортеже\n    if element in tuple_data:\n        # Считаем количество вхождений элемента\n        count = tuple_data.count(element)\n        print(f\"Элемент '{element}' найден в кортеже. Количество вхождений: {count}\")\n        return count\n    else:\n        print(f\"Элемент '{element}' не найден в кортеже.\")\n        return 0",
+        "detail": "Первый семестр Shipov.Задание_12",
+        "documentation": {}
+    },
+    {
+        "label": "list_to_unique_tuple",
+        "kind": 2,
+        "importPath": "Первый семестр Shipov.Задание_12",
+        "description": "Первый семестр Shipov.Задание_12",
+        "peekOfCode": "def list_to_unique_tuple(string_list):\n    # Преобразуем список в множество для удаления дубликатов, затем в кортеж\n    unique_tuple = tuple(set(string_list))\n    print(f\"Кортеж без повторений: {unique_tuple}\")\n    return unique_tuple\n# Демонстрация работы функций\nif __name__ == \"__main__\":\n    # Пример для части а)\n    print(\"Часть а):\")\n    my_tuple = ('apple', 'banana', 'orange', 'apple', 'grape')",
+        "detail": "Первый семестр Shipov.Задание_12",
+        "documentation": {}
+    },
+    {
+        "label": "unique_digits_ascending",
+        "kind": 2,
+        "importPath": "Первый семестр Shipov.Задание_13",
+        "description": "Первый семестр Shipov.Задание_13",
+        "peekOfCode": "def unique_digits_ascending(number):\n    # Преобразуем число в строку, чтобы работать с каждой цифрой\n    num_str = str(number)\n    # Создаем множество из цифр (автоматически удаляет дубликаты)\n    unique_digits = set(num_str)\n    # Фильтруем только цифры (игнорируем знак минус для отрицательных чисел)\n    digits_only = {d for d in unique_digits if d.isdigit()}\n    # Сортируем цифры в возрастающем порядке и выводим\n    sorted_digits = sorted(digits_only)\n    print(\"Уникальные цифры в возрастающем порядке:\", sorted_digits)",
+        "detail": "Первый семестр Shipov.Задание_13",
+        "documentation": {}
+    },
+    {
+        "label": "is_strict_subset",
+        "kind": 2,
+        "importPath": "Первый семестр Shipov.Задание_13",
+        "description": "Первый семестр Shipov.Задание_13",
+        "peekOfCode": "def is_strict_subset(A, B):\n    # Проверяем, что все элементы A есть в B, и что B имеет дополнительные элементы\n    is_subset = A.issubset(B)\n    has_additional = len(B) > len(A)\n    # Выводим результат проверки\n    if is_subset and has_additional:\n        print(\"Множество A является строгим подмножеством множества B\")\n        return True\n    else:\n        print(\"Множество A НЕ является строгим подмножеством множества B\")",
+        "detail": "Первый семестр Shipov.Задание_13",
+        "documentation": {}
+    },
+    {
+        "label": "A1",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_2",
+        "description": "Первый семестр Shipov.Задание_2",
+        "peekOfCode": "A1 = int(input(\"Введите A1: \"))\nB1 = int(input(\"Введите B1: \"))\nC1 = int(input(\"Введите C1: \"))\nA2 = int(input(\"Введите A2: \"))\nB2 = int(input(\"Введите B2: \"))\nC2 = int(input(\"Введите C2: \"))\n# Вычисляем определитель\nD = (A1 * B2) - (A2 * B1)\n# Вычисляем x и y\nx = (C1 * B2 - C2 * B1) / D",
+        "detail": "Первый семестр Shipov.Задание_2",
+        "documentation": {}
+    },
+    {
+        "label": "B1",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_2",
+        "description": "Первый семестр Shipov.Задание_2",
+        "peekOfCode": "B1 = int(input(\"Введите B1: \"))\nC1 = int(input(\"Введите C1: \"))\nA2 = int(input(\"Введите A2: \"))\nB2 = int(input(\"Введите B2: \"))\nC2 = int(input(\"Введите C2: \"))\n# Вычисляем определитель\nD = (A1 * B2) - (A2 * B1)\n# Вычисляем x и y\nx = (C1 * B2 - C2 * B1) / D\ny = (A1 * C2 - A2 * C1) / D",
+        "detail": "Первый семестр Shipov.Задание_2",
+        "documentation": {}
+    },
+    {
+        "label": "C1",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_2",
+        "description": "Первый семестр Shipov.Задание_2",
+        "peekOfCode": "C1 = int(input(\"Введите C1: \"))\nA2 = int(input(\"Введите A2: \"))\nB2 = int(input(\"Введите B2: \"))\nC2 = int(input(\"Введите C2: \"))\n# Вычисляем определитель\nD = (A1 * B2) - (A2 * B1)\n# Вычисляем x и y\nx = (C1 * B2 - C2 * B1) / D\ny = (A1 * C2 - A2 * C1) / D\n# Выводим результат",
+        "detail": "Первый семестр Shipov.Задание_2",
+        "documentation": {}
+    },
+    {
+        "label": "A2",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_2",
+        "description": "Первый семестр Shipov.Задание_2",
+        "peekOfCode": "A2 = int(input(\"Введите A2: \"))\nB2 = int(input(\"Введите B2: \"))\nC2 = int(input(\"Введите C2: \"))\n# Вычисляем определитель\nD = (A1 * B2) - (A2 * B1)\n# Вычисляем x и y\nx = (C1 * B2 - C2 * B1) / D\ny = (A1 * C2 - A2 * C1) / D\n# Выводим результат\nprint(\"x =\", x)",
+        "detail": "Первый семестр Shipov.Задание_2",
+        "documentation": {}
+    },
+    {
+        "label": "B2",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_2",
+        "description": "Первый семестр Shipov.Задание_2",
+        "peekOfCode": "B2 = int(input(\"Введите B2: \"))\nC2 = int(input(\"Введите C2: \"))\n# Вычисляем определитель\nD = (A1 * B2) - (A2 * B1)\n# Вычисляем x и y\nx = (C1 * B2 - C2 * B1) / D\ny = (A1 * C2 - A2 * C1) / D\n# Выводим результат\nprint(\"x =\", x)\nprint(\"y =\", y)",
+        "detail": "Первый семестр Shipov.Задание_2",
+        "documentation": {}
+    },
+    {
+        "label": "C2",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_2",
+        "description": "Первый семестр Shipov.Задание_2",
+        "peekOfCode": "C2 = int(input(\"Введите C2: \"))\n# Вычисляем определитель\nD = (A1 * B2) - (A2 * B1)\n# Вычисляем x и y\nx = (C1 * B2 - C2 * B1) / D\ny = (A1 * C2 - A2 * C1) / D\n# Выводим результат\nprint(\"x =\", x)\nprint(\"y =\", y)",
+        "detail": "Первый семестр Shipov.Задание_2",
+        "documentation": {}
+    },
+    {
+        "label": "D",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_2",
+        "description": "Первый семестр Shipov.Задание_2",
+        "peekOfCode": "D = (A1 * B2) - (A2 * B1)\n# Вычисляем x и y\nx = (C1 * B2 - C2 * B1) / D\ny = (A1 * C2 - A2 * C1) / D\n# Выводим результат\nprint(\"x =\", x)\nprint(\"y =\", y)",
+        "detail": "Первый семестр Shipov.Задание_2",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_2",
+        "description": "Первый семестр Shipov.Задание_2",
+        "peekOfCode": "x = (C1 * B2 - C2 * B1) / D\ny = (A1 * C2 - A2 * C1) / D\n# Выводим результат\nprint(\"x =\", x)\nprint(\"y =\", y)",
+        "detail": "Первый семестр Shipov.Задание_2",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_2",
+        "description": "Первый семестр Shipov.Задание_2",
+        "peekOfCode": "y = (A1 * C2 - A2 * C1) / D\n# Выводим результат\nprint(\"x =\", x)\nprint(\"y =\", y)",
+        "detail": "Первый семестр Shipov.Задание_2",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_3",
+        "description": "Первый семестр Shipov.Задание_3",
+        "peekOfCode": "x = float(input(\"Введите x: \"))\na = float(input(\"Введите a: \"))\n# Вычисляем по условию\nif x > 1:\n    y = 2 * a * (x ** 2) - 1\nelse:\n    y = 1 / a\n# Вывод\nprint(\"y =\", y)",
+        "detail": "Первый семестр Shipov.Задание_3",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_3",
+        "description": "Первый семестр Shipov.Задание_3",
+        "peekOfCode": "a = float(input(\"Введите a: \"))\n# Вычисляем по условию\nif x > 1:\n    y = 2 * a * (x ** 2) - 1\nelse:\n    y = 1 / a\n# Вывод\nprint(\"y =\", y)",
+        "detail": "Первый семестр Shipov.Задание_3",
+        "documentation": {}
+    },
+    {
+        "label": "Price",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_4",
+        "description": "Первый семестр Shipov.Задание_4",
+        "peekOfCode": "Price = float(input('Введите цену за 1кг: '))\nCount_st = 12\n# Выполняем условие перебора\nwhile Count_st <= 20:\n    print(Price * Count_st / 10)\n    Count_st += 2",
+        "detail": "Первый семестр Shipov.Задание_4",
+        "documentation": {}
+    },
+    {
+        "label": "Count_st",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_4",
+        "description": "Первый семестр Shipov.Задание_4",
+        "peekOfCode": "Count_st = 12\n# Выполняем условие перебора\nwhile Count_st <= 20:\n    print(Price * Count_st / 10)\n    Count_st += 2",
+        "detail": "Первый семестр Shipov.Задание_4",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_5",
+        "description": "Первый семестр Shipov.Задание_5",
+        "peekOfCode": "n = int(input('Введите число n: '))\nif n <= 0:\n\tprint('1')\nelse:\n\tchislo = 1\n\tfor perebor in range(0, n + 1):\n\t\tchislo += 1 / math.factorial(perebor)\nprint(chislo)",
+        "detail": "Первый семестр Shipov.Задание_5",
+        "documentation": {}
+    },
+    {
+        "label": "\tchislo",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_5",
+        "description": "Первый семестр Shipov.Задание_5",
+        "peekOfCode": "\tchislo = 1\n\tfor perebor in range(0, n + 1):\n\t\tchislo += 1 / math.factorial(perebor)\nprint(chislo)",
+        "detail": "Первый семестр Shipov.Задание_5",
+        "documentation": {}
+    },
+    {
+        "label": "spicok",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_6",
+        "description": "Первый семестр Shipov.Задание_6",
+        "peekOfCode": "spicok = []\nspicok_sort = []\n# Добавляем список\nperebor2 = int(input('Введите сколько чисел хотите добавить: '))\nfor perebor in range(0, perebor2):\n    spicok.append(input('Введите числа для добавления в список: '))\n# Перебераем список и переносим его в другой\nfor perebor1 in range(0, len(spicok)):\n    if int(spicok[perebor1]) % 2 == 0:\n        spicok_sort.append(spicok[perebor1])",
+        "detail": "Первый семестр Shipov.Задание_6",
+        "documentation": {}
+    },
+    {
+        "label": "spicok_sort",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_6",
+        "description": "Первый семестр Shipov.Задание_6",
+        "peekOfCode": "spicok_sort = []\n# Добавляем список\nperebor2 = int(input('Введите сколько чисел хотите добавить: '))\nfor perebor in range(0, perebor2):\n    spicok.append(input('Введите числа для добавления в список: '))\n# Перебераем список и переносим его в другой\nfor perebor1 in range(0, len(spicok)):\n    if int(spicok[perebor1]) % 2 == 0:\n        spicok_sort.append(spicok[perebor1])\n    else:",
+        "detail": "Первый семестр Shipov.Задание_6",
+        "documentation": {}
+    },
+    {
+        "label": "perebor2",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_6",
+        "description": "Первый семестр Shipov.Задание_6",
+        "peekOfCode": "perebor2 = int(input('Введите сколько чисел хотите добавить: '))\nfor perebor in range(0, perebor2):\n    spicok.append(input('Введите числа для добавления в список: '))\n# Перебераем список и переносим его в другой\nfor perebor1 in range(0, len(spicok)):\n    if int(spicok[perebor1]) % 2 == 0:\n        spicok_sort.append(spicok[perebor1])\n    else:\n        spicok_sort.append(0)\nprint(spicok_sort)",
+        "detail": "Первый семестр Shipov.Задание_6",
+        "documentation": {}
+    },
+    {
+        "label": "spicok",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_7",
+        "description": "Первый семестр Shipov.Задание_7",
+        "peekOfCode": "spicok = []\nspicok_sort = []\n# Добавляем список\nperebor2 = int(input('Введите сколько чисел хотите добавить: '))\nfor perebor in range(0, perebor2):\n    spicok.append(input('Введите числа для добавления в список: '))\n# Перебераем список и переносим его в другой\nfor perebor1 in range(0, len(spicok)):\n    if int(spicok[perebor1]) % 3 == 0:\n        spicok_sort.append(spicok[perebor1])",
+        "detail": "Первый семестр Shipov.Задание_7",
+        "documentation": {}
+    },
+    {
+        "label": "spicok_sort",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_7",
+        "description": "Первый семестр Shipov.Задание_7",
+        "peekOfCode": "spicok_sort = []\n# Добавляем список\nperebor2 = int(input('Введите сколько чисел хотите добавить: '))\nfor perebor in range(0, perebor2):\n    spicok.append(input('Введите числа для добавления в список: '))\n# Перебераем список и переносим его в другой\nfor perebor1 in range(0, len(spicok)):\n    if int(spicok[perebor1]) % 3 == 0:\n        spicok_sort.append(spicok[perebor1])\n# Сортируем ",
+        "detail": "Первый семестр Shipov.Задание_7",
+        "documentation": {}
+    },
+    {
+        "label": "perebor2",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_7",
+        "description": "Первый семестр Shipov.Задание_7",
+        "peekOfCode": "perebor2 = int(input('Введите сколько чисел хотите добавить: '))\nfor perebor in range(0, perebor2):\n    spicok.append(input('Введите числа для добавления в список: '))\n# Перебераем список и переносим его в другой\nfor perebor1 in range(0, len(spicok)):\n    if int(spicok[perebor1]) % 3 == 0:\n        spicok_sort.append(spicok[perebor1])\n# Сортируем \nspicok_sort = sorted(spicok_sort)\n# Принтим",
+        "detail": "Первый семестр Shipov.Задание_7",
+        "documentation": {}
+    },
+    {
+        "label": "spicok_sort",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_7",
+        "description": "Первый семестр Shipov.Задание_7",
+        "peekOfCode": "spicok_sort = sorted(spicok_sort)\n# Принтим\nprint((spicok_sort))",
+        "detail": "Первый семестр Shipov.Задание_7",
+        "documentation": {}
+    },
+    {
+        "label": "swap_quarters",
+        "kind": 2,
+        "importPath": "Первый семестр Shipov.Задание_8",
+        "description": "Первый семестр Shipov.Задание_8",
+        "peekOfCode": "def swap_quarters(matrix):\n\t# Получаем количество строк и столбцов матрицы\n\tM = len(matrix)\n\tN = len(matrix[0])\n\t# Проверяем, что размерности матрицы четные\n\tif M % 2 != 0 or N % 2 != 0:\n\t\traise ValueError(\"Размеры матрицы должны быть четными числами\")\n\t# Вычисляем середины матрицы по строкам и столбцам\n\tmid_row = M // 2\n\tmid_col = N // 2",
+        "detail": "Первый семестр Shipov.Задание_8",
+        "documentation": {}
+    },
+    {
+        "label": "\tM",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_8",
+        "description": "Первый семестр Shipov.Задание_8",
+        "peekOfCode": "\tM = len(matrix)\n\tN = len(matrix[0])\n\t# Проверяем, что размерности матрицы четные\n\tif M % 2 != 0 or N % 2 != 0:\n\t\traise ValueError(\"Размеры матрицы должны быть четными числами\")\n\t# Вычисляем середины матрицы по строкам и столбцам\n\tmid_row = M // 2\n\tmid_col = N // 2\n\t# Проходим по всем элементам левой верхней и правой нижней четвертей\n\tfor i in range(mid_row):",
+        "detail": "Первый семестр Shipov.Задание_8",
+        "documentation": {}
+    },
+    {
+        "label": "\tN",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_8",
+        "description": "Первый семестр Shipov.Задание_8",
+        "peekOfCode": "\tN = len(matrix[0])\n\t# Проверяем, что размерности матрицы четные\n\tif M % 2 != 0 or N % 2 != 0:\n\t\traise ValueError(\"Размеры матрицы должны быть четными числами\")\n\t# Вычисляем середины матрицы по строкам и столбцам\n\tmid_row = M // 2\n\tmid_col = N // 2\n\t# Проходим по всем элементам левой верхней и правой нижней четвертей\n\tfor i in range(mid_row):\n\t\tfor j in range(mid_col):",
+        "detail": "Первый семестр Shipov.Задание_8",
+        "documentation": {}
+    },
+    {
+        "label": "\tmid_row",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_8",
+        "description": "Первый семестр Shipov.Задание_8",
+        "peekOfCode": "\tmid_row = M // 2\n\tmid_col = N // 2\n\t# Проходим по всем элементам левой верхней и правой нижней четвертей\n\tfor i in range(mid_row):\n\t\tfor j in range(mid_col):\n\t\t\t# Сохраняем значение из левой верхней четверти\n\t\t\ttemp = matrix[i][j]\n\t\t\t# Заменяем значение в левой верхней четверти на значение из правой нижней\n\t\t\tmatrix[i][j] = matrix[i + mid_row][j + mid_col]\n\t\t\t# Заменяем значение в правой нижней четверти на сохраненное значение",
+        "detail": "Первый семестр Shipov.Задание_8",
+        "documentation": {}
+    },
+    {
+        "label": "\tmid_col",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_8",
+        "description": "Первый семестр Shipov.Задание_8",
+        "peekOfCode": "\tmid_col = N // 2\n\t# Проходим по всем элементам левой верхней и правой нижней четвертей\n\tfor i in range(mid_row):\n\t\tfor j in range(mid_col):\n\t\t\t# Сохраняем значение из левой верхней четверти\n\t\t\ttemp = matrix[i][j]\n\t\t\t# Заменяем значение в левой верхней четверти на значение из правой нижней\n\t\t\tmatrix[i][j] = matrix[i + mid_row][j + mid_col]\n\t\t\t# Заменяем значение в правой нижней четверти на сохраненное значение\n\t\t\tmatrix[i + mid_row][j + mid_col] = temp",
+        "detail": "Первый семестр Shipov.Задание_8",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\ttemp",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_8",
+        "description": "Первый семестр Shipov.Задание_8",
+        "peekOfCode": "\t\t\ttemp = matrix[i][j]\n\t\t\t# Заменяем значение в левой верхней четверти на значение из правой нижней\n\t\t\tmatrix[i][j] = matrix[i + mid_row][j + mid_col]\n\t\t\t# Заменяем значение в правой нижней четверти на сохраненное значение\n\t\t\tmatrix[i + mid_row][j + mid_col] = temp\n\treturn matrix\n# Пример использования\nmatrix = [\n\t[1, 2, 3, 4],\n\t[5, 6, 7, 8],",
+        "detail": "Первый семестр Shipov.Задание_8",
+        "documentation": {}
+    },
+    {
+        "label": "\t\t\tmatrix[i][j]",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_8",
+        "description": "Первый семестр Shipov.Задание_8",
+        "peekOfCode": "\t\t\tmatrix[i][j] = matrix[i + mid_row][j + mid_col]\n\t\t\t# Заменяем значение в правой нижней четверти на сохраненное значение\n\t\t\tmatrix[i + mid_row][j + mid_col] = temp\n\treturn matrix\n# Пример использования\nmatrix = [\n\t[1, 2, 3, 4],\n\t[5, 6, 7, 8],\n\t[9, 10, 11, 12],\n\t[13, 14, 15, 16]",
+        "detail": "Первый семестр Shipov.Задание_8",
+        "documentation": {}
+    },
+    {
+        "label": "matrix",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_8",
+        "description": "Первый семестр Shipov.Задание_8",
+        "peekOfCode": "matrix = [\n\t[1, 2, 3, 4],\n\t[5, 6, 7, 8],\n\t[9, 10, 11, 12],\n\t[13, 14, 15, 16]\n]\nprint(\"Исходная матрица:\")\nfor row in matrix:\n\tprint(row)\nresult = swap_quarters(matrix)",
+        "detail": "Первый семестр Shipov.Задание_8",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "Первый семестр Shipov.Задание_8",
+        "description": "Первый семестр Shipov.Задание_8",
+        "peekOfCode": "result = swap_quarters(matrix)\nprint(\"\\nМатрица после обмена четвертей:\")\nfor row in result:\n\tprint(row)",
+        "detail": "Первый семестр Shipov.Задание_8",
+        "documentation": {}
+    },
+    {
+        "label": "find_longest_word_length",
+        "kind": 2,
+        "importPath": "Первый семестр Shipov.Задание_9",
+        "description": "Первый семестр Shipov.Задание_9",
+        "peekOfCode": "def find_longest_word_length(text):\n    return max(len(word) for word in text.split())",
+        "detail": "Первый семестр Shipov.Задание_9",
+        "documentation": {}
+    }
+]
