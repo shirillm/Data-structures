@@ -471,5 +471,509 @@
         "peekOfCode": "def find_longest_word_length(text):\n    return max(len(word) for word in text.split())",
         "detail": "Первый семестр Shipov.Задание_9",
         "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.1.3",
+        "description": "Практика первый семестр.2.Задание 2.1.3",
+        "peekOfCode": "text = input()  # читаем строку\nprice_kop = len(text) * 60  # считаем стоимость в копейках\nrub = price_kop // 100      # целые рубли\nkop = price_kop % 100       # остаток копеек\nprint(f\"{rub} р. {kop} коп.\")",
+        "detail": "Практика первый семестр.2.Задание 2.1.3",
+        "documentation": {}
+    },
+    {
+        "label": "price_kop",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.1.3",
+        "description": "Практика первый семестр.2.Задание 2.1.3",
+        "peekOfCode": "price_kop = len(text) * 60  # считаем стоимость в копейках\nrub = price_kop // 100      # целые рубли\nkop = price_kop % 100       # остаток копеек\nprint(f\"{rub} р. {kop} коп.\")",
+        "detail": "Практика первый семестр.2.Задание 2.1.3",
+        "documentation": {}
+    },
+    {
+        "label": "rub",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.1.3",
+        "description": "Практика первый семестр.2.Задание 2.1.3",
+        "peekOfCode": "rub = price_kop // 100      # целые рубли\nkop = price_kop % 100       # остаток копеек\nprint(f\"{rub} р. {kop} коп.\")",
+        "detail": "Практика первый семестр.2.Задание 2.1.3",
+        "documentation": {}
+    },
+    {
+        "label": "kop",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.1.3",
+        "description": "Практика первый семестр.2.Задание 2.1.3",
+        "peekOfCode": "kop = price_kop % 100       # остаток копеек\nprint(f\"{rub} р. {kop} коп.\")",
+        "detail": "Практика первый семестр.2.Задание 2.1.3",
+        "documentation": {}
+    },
+    {
+        "label": "animals",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.1.5",
+        "description": "Практика первый семестр.2.Задание 2.1.5",
+        "peekOfCode": "animals = [\n    \"Дракон\", \"Змея\", \"Лошадь\", \"Овца\",\n    \"Обезьяна\", \"Петух\", \"Собака\", \"Свинья\",\n    \"Крыса\", \"Бык\", \"Тигр\", \"Заяц\"\n]\nyear = int(input())\nprint(animals[(year - 2000) % 12])",
+        "detail": "Практика первый семестр.2.Задание 2.1.5",
+        "documentation": {}
+    },
+    {
+        "label": "year",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.1.5",
+        "description": "Практика первый семестр.2.Задание 2.1.5",
+        "peekOfCode": "year = int(input())\nprint(animals[(year - 2000) % 12])",
+        "detail": "Практика первый семестр.2.Задание 2.1.5",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.1.6",
+        "description": "Практика первый семестр.2.Задание 2.1.6",
+        "peekOfCode": "num = input().strip()\n# Если число 6-значное, отделяем первую цифру\nif len(num) == 6:\n    first = num[0]\n    last_five = num[1:]\n    reversed_five = last_five[::-1]\n    result = first + str(int(reversed_five))  # int убирает ведущие нули\nelse:\n    last_five = num\n    reversed_five = last_five[::-1]",
+        "detail": "Практика первый семестр.2.Задание 2.1.6",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.1.7",
+        "description": "Практика первый семестр.2.Задание 2.1.7",
+        "peekOfCode": "n = int(input())\nprint(f\"{n:,}\")",
+        "detail": "Практика первый семестр.2.Задание 2.1.7",
+        "documentation": {}
+    },
+    {
+        "label": "josephus",
+        "kind": 2,
+        "importPath": "Практика первый семестр.2.Задание 2.1.8",
+        "description": "Практика первый семестр.2.Задание 2.1.8",
+        "peekOfCode": "def josephus(n, k):\n    res = 0\n    for i in range(1, n + 1):\n        res = (res + k) % i\n    return res + 1   # +1, так как люди нумеруются с 1\nn = int(input())\nk = int(input())\nprint(josephus(n, k))",
+        "detail": "Практика первый семестр.2.Задание 2.1.8",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.1.8",
+        "description": "Практика первый семестр.2.Задание 2.1.8",
+        "peekOfCode": "n = int(input())\nk = int(input())\nprint(josephus(n, k))",
+        "detail": "Практика первый семестр.2.Задание 2.1.8",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.1.8",
+        "description": "Практика первый семестр.2.Задание 2.1.8",
+        "peekOfCode": "k = int(input())\nprint(josephus(n, k))",
+        "detail": "Практика первый семестр.2.Задание 2.1.8",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.1",
+        "description": "Практика первый семестр.2.Задание 2.2.1",
+        "peekOfCode": "n = int(input())  # количество точек\nq1 = q2 = q3 = q4 = 0\nfor _ in range(n):\n    x, y = map(int, input().split())\n    if x > 0 and y > 0:\n        q1 += 1\n    elif x < 0 and y > 0:\n        q2 += 1\n    elif x < 0 and y < 0:\n        q3 += 1",
+        "detail": "Практика первый семестр.2.Задание 2.2.1",
+        "documentation": {}
+    },
+    {
+        "label": "q1",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.1",
+        "description": "Практика первый семестр.2.Задание 2.2.1",
+        "peekOfCode": "q1 = q2 = q3 = q4 = 0\nfor _ in range(n):\n    x, y = map(int, input().split())\n    if x > 0 and y > 0:\n        q1 += 1\n    elif x < 0 and y > 0:\n        q2 += 1\n    elif x < 0 and y < 0:\n        q3 += 1\n    elif x > 0 and y < 0:",
+        "detail": "Практика первый семестр.2.Задание 2.2.1",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.10",
+        "description": "Практика первый семестр.2.Задание 2.2.10",
+        "peekOfCode": "n = int(input().strip())\ninfected = []\nfor idx in range(n):\n    s = input().strip()\n    target = \"anton\"\n    pos = 0\n    for char in s:\n        if pos < len(target) and char == target[pos]:\n            pos += 1\n        if pos == len(target):",
+        "detail": "Практика первый семестр.2.Задание 2.2.10",
+        "documentation": {}
+    },
+    {
+        "label": "infected",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.10",
+        "description": "Практика первый семестр.2.Задание 2.2.10",
+        "peekOfCode": "infected = []\nfor idx in range(n):\n    s = input().strip()\n    target = \"anton\"\n    pos = 0\n    for char in s:\n        if pos < len(target) and char == target[pos]:\n            pos += 1\n        if pos == len(target):\n            infected.append(str(idx + 1))",
+        "detail": "Практика первый семестр.2.Задание 2.2.10",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.11",
+        "description": "Практика первый семестр.2.Задание 2.2.11",
+        "peekOfCode": "s = input() + \" запретил букву\"\nalphabet = \"абвгдежзийклмнопрстуфхцчшщъыьэюя\"\nfor c in alphabet:\n    if c in s:\n        print(s, c)\n        s = s.replace(c, \"\").replace(\"  \", \" \").strip()",
+        "detail": "Практика первый семестр.2.Задание 2.2.11",
+        "documentation": {}
+    },
+    {
+        "label": "alphabet",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.11",
+        "description": "Практика первый семестр.2.Задание 2.2.11",
+        "peekOfCode": "alphabet = \"абвгдежзийклмнопрстуфхцчшщъыьэюя\"\nfor c in alphabet:\n    if c in s:\n        print(s, c)\n        s = s.replace(c, \"\").replace(\"  \", \" \").strip()",
+        "detail": "Практика первый семестр.2.Задание 2.2.11",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.2",
+        "description": "Практика первый семестр.2.Задание 2.2.2",
+        "peekOfCode": "numbers = list(map(int, input().split()))\ncount = 0\nfor i in range(1, len(numbers)):\n    if numbers[i] > numbers[i - 1]:\n        count += 1\nprint(count)",
+        "detail": "Практика первый семестр.2.Задание 2.2.2",
+        "documentation": {}
+    },
+    {
+        "label": "count",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.2",
+        "description": "Практика первый семестр.2.Задание 2.2.2",
+        "peekOfCode": "count = 0\nfor i in range(1, len(numbers)):\n    if numbers[i] > numbers[i - 1]:\n        count += 1\nprint(count)",
+        "detail": "Практика первый семестр.2.Задание 2.2.2",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.3",
+        "description": "Практика первый семестр.2.Задание 2.2.3",
+        "peekOfCode": "a = input().split()\nfor i in range(0, len(a) - 1, 2):\n    a[i], a[i + 1] = a[i + 1], a[i]\nprint(*a)",
+        "detail": "Практика первый семестр.2.Задание 2.2.3",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.4",
+        "description": "Практика первый семестр.2.Задание 2.2.4",
+        "peekOfCode": "nums = input().split()\nshifted = [nums[-1]] + nums[:-1]\nprint(*shifted)",
+        "detail": "Практика первый семестр.2.Задание 2.2.4",
+        "documentation": {}
+    },
+    {
+        "label": "shifted",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.4",
+        "description": "Практика первый семестр.2.Задание 2.2.4",
+        "peekOfCode": "shifted = [nums[-1]] + nums[:-1]\nprint(*shifted)",
+        "detail": "Практика первый семестр.2.Задание 2.2.4",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.5",
+        "description": "Практика первый семестр.2.Задание 2.2.5",
+        "peekOfCode": "nums = list(map(int, input().split()))\nprint(len(set(nums)))",
+        "detail": "Практика первый семестр.2.Задание 2.2.5",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.6",
+        "description": "Практика первый семестр.2.Задание 2.2.6",
+        "peekOfCode": "n = int(input())\nnumbers = [int(input()) for _ in range(n)]\nx = int(input())\nfound = False\nfor i in range(n):\n    for j in range(n):\n        if i != j and numbers[i] * numbers[j] == x:\n            found = True\n            break\n    if found:",
+        "detail": "Практика первый семестр.2.Задание 2.2.6",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.6",
+        "description": "Практика первый семестр.2.Задание 2.2.6",
+        "peekOfCode": "numbers = [int(input()) for _ in range(n)]\nx = int(input())\nfound = False\nfor i in range(n):\n    for j in range(n):\n        if i != j and numbers[i] * numbers[j] == x:\n            found = True\n            break\n    if found:\n        break",
+        "detail": "Практика первый семестр.2.Задание 2.2.6",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.6",
+        "description": "Практика первый семестр.2.Задание 2.2.6",
+        "peekOfCode": "x = int(input())\nfound = False\nfor i in range(n):\n    for j in range(n):\n        if i != j and numbers[i] * numbers[j] == x:\n            found = True\n            break\n    if found:\n        break\nprint(\"ДА\" if found else \"НЕТ\")",
+        "detail": "Практика первый семестр.2.Задание 2.2.6",
+        "documentation": {}
+    },
+    {
+        "label": "found",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.6",
+        "description": "Практика первый семестр.2.Задание 2.2.6",
+        "peekOfCode": "found = False\nfor i in range(n):\n    for j in range(n):\n        if i != j and numbers[i] * numbers[j] == x:\n            found = True\n            break\n    if found:\n        break\nprint(\"ДА\" if found else \"НЕТ\")",
+        "detail": "Практика первый семестр.2.Задание 2.2.6",
+        "documentation": {}
+    },
+    {
+        "label": "timur",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.7.1",
+        "description": "Практика первый семестр.2.Задание 2.2.7.1",
+        "peekOfCode": "timur = input().strip()\nruslan = input().strip()\nif timur == ruslan:\n    print(\"ничья\")\nelif (timur == \"камень\" and ruslan == \"ножницы\") or \\\n(timur == \"ножницы\" and ruslan == \"бумага\") or \\\n(timur == \"бумага\" and ruslan == \"камень\"):\n    print(\"Тимур\")\nelse:\n    print(\"Руслан\")",
+        "detail": "Практика первый семестр.2.Задание 2.2.7.1",
+        "documentation": {}
+    },
+    {
+        "label": "ruslan",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.7.1",
+        "description": "Практика первый семестр.2.Задание 2.2.7.1",
+        "peekOfCode": "ruslan = input().strip()\nif timur == ruslan:\n    print(\"ничья\")\nelif (timur == \"камень\" and ruslan == \"ножницы\") or \\\n(timur == \"ножницы\" and ruslan == \"бумага\") or \\\n(timur == \"бумага\" and ruslan == \"камень\"):\n    print(\"Тимур\")\nelse:\n    print(\"Руслан\")",
+        "detail": "Практика первый семестр.2.Задание 2.2.7.1",
+        "documentation": {}
+    },
+    {
+        "label": "rules",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.7.2",
+        "description": "Практика первый семестр.2.Задание 2.2.7.2",
+        "peekOfCode": "rules = {\"камень\": \"ножницы\", \"ножницы\": \"бумага\", \"бумага\": \"камень\"}\nprint(\"ничья\" if timur == ruslan else \"Тимур\" if rules[timur] == ruslan else \"Руслан\")",
+        "detail": "Практика первый семестр.2.Задание 2.2.7.2",
+        "documentation": {}
+    },
+    {
+        "label": "rules",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.8",
+        "description": "Практика первый семестр.2.Задание 2.2.8",
+        "peekOfCode": "rules = {\n    \"ножницы\": {\"бумага\", \"ящерица\"},\n    \"бумага\": {\"камень\", \"Спок\"},\n    \"камень\": {\"ножницы\", \"ящерица\"},\n    \"ящерица\": {\"Спок\", \"бумага\"},\n    \"Спок\": {\"ножницы\", \"камень\"}\n}\nif timur == ruslan:\n    print(\"ничья\")\nelif ruslan in rules[timur]:",
+        "detail": "Практика первый семестр.2.Задание 2.2.8",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "Практика первый семестр.2.Задание 2.2.9",
+        "description": "Практика первый семестр.2.Задание 2.2.9",
+        "peekOfCode": "s = input()\nprint(max(map(len, s.split(\"О\"))))",
+        "detail": "Практика первый семестр.2.Задание 2.2.9",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "kind": 2,
+        "importPath": "Практика первый семестр.3.Задание 3.1",
+        "description": "Практика первый семестр.3.Задание 3.1",
+        "peekOfCode": "def func(num1, num2):\n    return num1 % num2 == 0\n# ввод чисел\na = int(input())\nb = int(input())\nif func(a, b):\n    print(\"делится\")\nelse:\n    print(\"не делится\")",
+        "detail": "Практика первый семестр.3.Задание 3.1",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "Практика первый семестр.3.Задание 3.1",
+        "description": "Практика первый семестр.3.Задание 3.1",
+        "peekOfCode": "a = int(input())\nb = int(input())\nif func(a, b):\n    print(\"делится\")\nelse:\n    print(\"не делится\")",
+        "detail": "Практика первый семестр.3.Задание 3.1",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "Практика первый семестр.3.Задание 3.1",
+        "description": "Практика первый семестр.3.Задание 3.1",
+        "peekOfCode": "b = int(input())\nif func(a, b):\n    print(\"делится\")\nelse:\n    print(\"не делится\")",
+        "detail": "Практика первый семестр.3.Задание 3.1",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "Практика первый семестр.3.Задание 3.Практика.2",
+        "description": "Практика первый семестр.3.Задание 3.Практика.2",
+        "peekOfCode": "a = 6\nb = 10\nprint(not a == 10 and b == 10)",
+        "detail": "Практика первый семестр.3.Задание 3.Практика.2",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "Практика первый семестр.3.Задание 3.Практика.2",
+        "description": "Практика первый семестр.3.Задание 3.Практика.2",
+        "peekOfCode": "b = 10\nprint(not a == 10 and b == 10)",
+        "detail": "Практика первый семестр.3.Задание 3.Практика.2",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "Практика первый семестр.3.Задание 3.Практика.3",
+        "description": "Практика первый семестр.3.Задание 3.Практика.3",
+        "peekOfCode": "a = 6\nb = 10\nprint(not(not a == 10 or not b == 10))",
+        "detail": "Практика первый семестр.3.Задание 3.Практика.3",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "Практика первый семестр.3.Задание 3.Практика.3",
+        "description": "Практика первый семестр.3.Задание 3.Практика.3",
+        "peekOfCode": "b = 10\nprint(not(not a == 10 or not b == 10))",
+        "detail": "Практика первый семестр.3.Задание 3.Практика.3",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "Практика первый семестр.3.Задание 3.Практика.4",
+        "description": "Практика первый семестр.3.Задание 3.Практика.4",
+        "peekOfCode": "numbers = [-6, -8, 0, 1, 3, 8, -7, 12, 17, 24, 25, 3, 5, 1]\nres = 0\nfor num in numbers:\n    res += (num % 2 == 1) and (num > 1)\nprint(res)",
+        "detail": "Практика первый семестр.3.Задание 3.Практика.4",
+        "documentation": {}
+    },
+    {
+        "label": "res",
+        "kind": 5,
+        "importPath": "Практика первый семестр.3.Задание 3.Практика.4",
+        "description": "Практика первый семестр.3.Задание 3.Практика.4",
+        "peekOfCode": "res = 0\nfor num in numbers:\n    res += (num % 2 == 1) and (num > 1)\nprint(res)",
+        "detail": "Практика первый семестр.3.Задание 3.Практика.4",
+        "documentation": {}
+    },
+    {
+        "label": "num1",
+        "kind": 5,
+        "importPath": "Практика первый семестр.3.Задание 3.Практика",
+        "description": "Практика первый семестр.3.Задание 3.Практика",
+        "peekOfCode": "num1 = 3 * True - (True + False)\nnum2 = (True + True + False) ** 3 + 5\nprint(num1 + num2)",
+        "detail": "Практика первый семестр.3.Задание 3.Практика",
+        "documentation": {}
+    },
+    {
+        "label": "num2",
+        "kind": 5,
+        "importPath": "Практика первый семестр.3.Задание 3.Практика",
+        "description": "Практика первый семестр.3.Задание 3.Практика",
+        "peekOfCode": "num2 = (True + True + False) ** 3 + 5\nprint(num1 + num2)",
+        "detail": "Практика первый семестр.3.Задание 3.Практика",
+        "documentation": {}
+    },
+    {
+        "label": "words",
+        "kind": 5,
+        "importPath": "Практика первый семестр.4.4.1.Задание 4.11",
+        "description": "Практика первый семестр.4.4.1.Задание 4.11",
+        "peekOfCode": "words = ['Hello', 'Python']\nprint('-'.join(words))",
+        "detail": "Практика первый семестр.4.4.1.Задание 4.11",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "Практика первый семестр.4.4.1.Задание 4.12",
+        "description": "Практика первый семестр.4.4.1.Задание 4.12",
+        "peekOfCode": "numbers = [10, 20, 30, 40]\ndel numbers[0:6]\nprint(numbers)",
+        "detail": "Практика первый семестр.4.4.1.Задание 4.12",
+        "documentation": {}
+    },
+    {
+        "label": "words",
+        "kind": 5,
+        "importPath": "Практика первый семестр.4.4.1.Задание 4.13",
+        "description": "Практика первый семестр.4.4.1.Задание 4.13",
+        "peekOfCode": "words = ['xyz', 'zara', 'beegeek']\nprint(max(words))",
+        "detail": "Практика первый семестр.4.4.1.Задание 4.13",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "Практика первый семестр.4.4.1.Задание 4.14",
+        "description": "Практика первый семестр.4.4.1.Задание 4.14",
+        "peekOfCode": "numbers = [1, 2, 3, 4, 5, 6, 7]\nnew_numbers = [2 * x for x in numbers]\nprint(new_numbers)",
+        "detail": "Практика первый семестр.4.4.1.Задание 4.14",
+        "documentation": {}
+    },
+    {
+        "label": "new_numbers",
+        "kind": 5,
+        "importPath": "Практика первый семестр.4.4.1.Задание 4.14",
+        "description": "Практика первый семестр.4.4.1.Задание 4.14",
+        "peekOfCode": "new_numbers = [2 * x for x in numbers]\nprint(new_numbers)",
+        "detail": "Практика первый семестр.4.4.1.Задание 4.14",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "Практика первый семестр.4.4.1.Задание 4.6",
+        "description": "Практика первый семестр.4.4.1.Задание 4.6",
+        "peekOfCode": "numbers = [10, 20, 30, 40, 50, 60, 70, 80]\nprint(numbers[2:5])\nprint(numbers[:4])\nprint(numbers[3:])",
+        "detail": "Практика первый семестр.4.4.1.Задание 4.6",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "Практика первый семестр.4.4.1.Задание 4.7",
+        "description": "Практика первый семестр.4.4.1.Задание 4.7",
+        "peekOfCode": "numbers = [10, 20, 30, 40, 50]\nnumbers.append(60)\nprint(numbers)\nnumbers.append(60)\nprint(numbers)",
+        "detail": "Практика первый семестр.4.4.1.Задание 4.7",
+        "documentation": {}
+    },
+    {
+        "label": "numbers",
+        "kind": 5,
+        "importPath": "Практика первый семестр.4.4.1.Задание 4.8",
+        "description": "Практика первый семестр.4.4.1.Задание 4.8",
+        "peekOfCode": "numbers = [10, 20, 30, 40, 50]\nnumbers.pop()\nprint(numbers)\nnumbers.pop(2)\nprint(numbers)",
+        "detail": "Практика первый семестр.4.4.1.Задание 4.8",
+        "documentation": {}
+    },
+    {
+        "label": "list1",
+        "kind": 5,
+        "importPath": "Практика первый семестр.4.4.2.Задание 4.2.1",
+        "description": "Практика первый семестр.4.4.2.Задание 4.2.1",
+        "peekOfCode": "list1 = [[1, 8, 9], [4, 8, 12, 16], [0, 2, 7]]\nprint(list1[0][1] + list1[1][2] + list1[2][2])",
+        "detail": "Практика первый семестр.4.4.2.Задание 4.2.1",
+        "documentation": {}
+    },
+    {
+        "label": "list1",
+        "kind": 5,
+        "importPath": "Практика первый семестр.4.4.2.Задание 4.2.2",
+        "description": "Практика первый семестр.4.4.2.Задание 4.2.2",
+        "peekOfCode": "list1 = [[1, 8, 9], [4, 8, 12, 16], [0, 2, 7]]\nprint(list1[0][1] + list1[3][2] + list1[2][2])",
+        "detail": "Практика первый семестр.4.4.2.Задание 4.2.2",
+        "documentation": {}
+    },
+    {
+        "label": "list1",
+        "kind": 5,
+        "importPath": "Практика первый семестр.4.4.2.Задание 4.2.3",
+        "description": "Практика первый семестр.4.4.2.Задание 4.2.3",
+        "peekOfCode": "list1 = ['Beegeek', [4, 8, 12, 16]]\nprint(list1[0][1])\nprint(list1[1][3])",
+        "detail": "Практика первый семестр.4.4.2.Задание 4.2.3",
+        "documentation": {}
+    },
+    {
+        "label": "list1",
+        "kind": 5,
+        "importPath": "Практика первый семестр.4.4.2.Задание 4.2.4",
+        "description": "Практика первый семестр.4.4.2.Задание 4.2.4",
+        "peekOfCode": "list1 = [[0, [9, 2]], [1, [4, 6, 3], [5, 2, 3], 8, 3]]\nprint(list1[1][2][1])",
+        "detail": "Практика первый семестр.4.4.2.Задание 4.2.4",
+        "documentation": {}
+    },
+    {
+        "label": "list1",
+        "kind": 5,
+        "importPath": "Практика первый семестр.4.4.2.Задание 4.2.5",
+        "description": "Практика первый семестр.4.4.2.Задание 4.2.5",
+        "peekOfCode": "list1 = [[1, 2, 3], [4, 5], [8], [1, 2, 3, 4]]\nprint(len(list1))",
+        "detail": "Практика первый семестр.4.4.2.Задание 4.2.5",
+        "documentation": {}
     }
 ]
